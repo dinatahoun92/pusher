@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frijole&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src=" ./script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <!--form div-->
+    <div class="grid grid-cols-1 bg-gradient-to-r from-green-400 to-blue-500 h-screen	place-content-center">
+
+        <div class=" bg-gray-50 p-9 lg:w-5/12 rounded-md m-auto">
+            <h2 class="text-blue-600 text-opacity-70 lg:text-6xl mb-6 text-center ">Pusher</h2>
+            <input type="text" id="group" placeholder="Type group name" />
+            <input type="text" id="name" placeholder="Type your name" />
+            <button
+                class="bg-gradient-to-r from-green-400 to-blue-500 w-full h-11 text-white font-bold rounded-md mt-2 mb-3 focus:ring-3 hover:ring-green-400 opacity-80 hover:opacity-100 focus:outline-none focus:ring-3 focus:ring-green-400 focus:ring-opacity-50"
+                id="join">Join
+                Group</button>
+        </div>
+    </div>
+    <!-- chat div -->
+
+    <div class="grid grid-cols-1 bg-gradient-to-r from-green-400 to-blue-500 h-screen	place-content-center p-5"
+        id="section2">
+
+        <div class=" bg-gray-50 p-9 w-full  lg:w-6/12 rounded-md m-auto">
+            <div class="flex justify-between  mb-6">
+                <h3 class="text-xl text-green-400 font-bold">Group Name: <span
+                        class="text-sm text-gray-800 font-normal">online
+                        users (4)</span></h3>
+                <button class="text-red-700 font-bold opacity-80 hover:opacity-100" id="logout">Log out</button>
+            </div>
+            <div class="grid border p-3 border-gray-200 rounded-md shadow-sm mb-4 overflow-x-auto max-h-60">
+                <p
+                    class="bg-gradient-to-r from-gray-400 to-black p-3 w-auto rounded-xl inline-block text-white min-w-3/9 mb-5 justify-self-start">
+                    <span class="font-bold mr-1">User1:</span> message from user 1
+                </p>
+
+
+                <p
+                    class="bg-gradient-to-r from-gray-400 to-black p-3 w-auto rounded-xl inline-block text-white min-w-3/9 mb-5 justify-self-start">
+                    <span class="font-bold mr-1">User2:</span> message from user 2
+                </p>
+                <p
+                    class="bg-gradient-to-r from-green-400 to-blue-500 p-3 w-auto rounded-xl inline-block text-white min-w-3/9 mb-5 justify-self-end">
+                    <span class="font-bold mr-1">You:</span> your message
+                </p>
+
+            </div>
+            <div class="flex justify-between mb-4">
+                <textarea class="flex-grow border-0  rounded-tl-md rounded-bl-md" placeholder="Message..."></textarea>
+                <button
+                    class=" align-middle font-bold rounded-r-md bg-gradient-to-r from-green-400 to-blue-500 text-white p-2 text-xs letterSpacing-wider"
+                    id="send">SEND</button>
+
+            </div>
+            <p class="text-red-600 text-center pt-3 opacity-70">You will log out after(00:21)</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
